@@ -56,15 +56,39 @@
 		9434A88929C42D39006DE8FC /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				9434A88A29C42D39006DE8FC /* AppDelegate.swift */,
-				9434A88C29C42D39006DE8FC /* SceneDelegate.swift */,
-				9434A88E29C42D39006DE8FC /* ViewController.swift */,
-				9434A89029C42D39006DE8FC /* Main.storyboard */,
+				9434A8A029C434B8006DE8FC /* ViewControllers */,
+				9434A8A129C434E4006DE8FC /* Storyboards */,
+				9434A8A229C4351D006DE8FC /* SupportFiles */,
 				9434A89329C42D3B006DE8FC /* Assets.xcassets */,
-				9434A89529C42D3B006DE8FC /* LaunchScreen.storyboard */,
 				9434A89829C42D3B006DE8FC /* Info.plist */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		9434A8A029C434B8006DE8FC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9434A88E29C42D39006DE8FC /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9434A8A129C434E4006DE8FC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9434A89529C42D3B006DE8FC /* LaunchScreen.storyboard */,
+				9434A89029C42D39006DE8FC /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9434A8A229C4351D006DE8FC /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9434A88A29C42D39006DE8FC /* AppDelegate.swift */,
+				9434A88C29C42D39006DE8FC /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
