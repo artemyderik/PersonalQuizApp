@@ -9,21 +9,21 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-//MARK: IB Outlets
+    //MARK: IB Outlets
     @IBOutlet var resultLabel: UILabel!
     @IBOutlet var resultTextLabel: UILabel!
     
     //MARK: Public Properties
     var chosenAnswers: [Answer]!
     
-//MARK: Override Methods
+    //MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         getResult()
         navigationItem.hidesBackButton = true
     }
     
-//MARK: IB Actions
+    //MARK: IB Actions
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
         navigationController?.dismiss(animated: true)
     }
@@ -33,7 +33,7 @@ class ResultViewController: UIViewController {
 extension ResultViewController {
     private func getResult() {
         let animalsTypes = chosenAnswers.map { $0.type }
-        
+
         var animalsWithKeys: [AnimalType : Int] = [:]
         for animal in animalsTypes {
             animalsWithKeys[animal] = (animalsWithKeys[animal] ?? 0) + 1
