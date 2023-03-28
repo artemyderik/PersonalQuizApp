@@ -8,12 +8,12 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    
 //MARK: IB Outlets
     @IBOutlet var resultLabel: UILabel!
     @IBOutlet var resultTextLabel: UILabel!
     
-//MARK: Public Properties
+    //MARK: Public Properties
     var chosenAnswers: [Answer]!
     
 //MARK: Override Methods
@@ -32,10 +32,7 @@ class ResultViewController: UIViewController {
 //MARK: Private Methods
 extension ResultViewController {
     private func getResult() {
-        var animalsTypes = [AnimalType]()
-        for chosenAnswer in chosenAnswers {
-            animalsTypes.append(chosenAnswer.type)
-        }
+        let animalsTypes = chosenAnswers.map { $0.type }
         
         var animalsWithKeys: [AnimalType : Int] = [:]
         for animal in animalsTypes {
